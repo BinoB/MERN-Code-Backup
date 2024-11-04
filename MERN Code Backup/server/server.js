@@ -2,12 +2,12 @@ import mongoose from "mongoose";
 import express from "express";
 import dotenv from "dotenv";
 dotenv.config();
-
+import customerRoute from './customer with 2 ID/routes/customerRoute.js';
 
 const app = express()
 app.use(express.json());
 
-
+app.use('/', customerRoute);
 
 //Route Middleware
 

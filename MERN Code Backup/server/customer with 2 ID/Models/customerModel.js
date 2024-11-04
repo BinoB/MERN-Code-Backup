@@ -4,8 +4,8 @@ import mongoose from 'mongoose';
 const customerSchema = new mongoose.Schema({
     customers: [
         {
-            name: { type: String, required: true },
-            id: { type: String, required: true },
+            name: { type: String},
+            phoneno: { type: String},
         },
     ],
 });
